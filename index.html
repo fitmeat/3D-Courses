@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container container__size">
             <div class="row">
-                <div class="col-12 flex advantages__item">
+                <div class="col-12 flex header___content">
                     <a href="#" class="header__logo">
                         <img src="../img/skillbox-logo.svg" alt="Logo">
                     </a>
@@ -75,11 +75,10 @@
         <section class="advantages">
             <div class="container container__size">
                 <div class="row">
-                    <div class="advantages__row__wrapper">
+                    <div class="advantages__row__wrapper flex">
                         <div class="col-lg-2 col-md-4 col-sm-4 advantages__picture">
                             <picture>
-                                <source srcset="img/texture.png" media="(max-width: 768px)">
-                                <source srcset="img/texture540px.png" media="(min-width: 576px)">
+                                <source srcset="img/texture.png" media="(max-width: 992px)">
                                 <img class="advantages__img" src="/img/advantages.png" alt="" aria-hidden="true">
                             </picture>
                         </div>
@@ -101,9 +100,9 @@
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-12">
-                        <div class="advantages__column flex">
-                            <svg class="advantages__column__svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="advantages__column flex advantages__hack1">
+                            <svg class="advantages__column__svg " width="80" height="80" viewBox="0 0 80 80" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_51_142)">
                                     <path
@@ -119,7 +118,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
                         <div class="advantages__column flex">
                             <svg class="advantages__column__svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -151,8 +150,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="advantages__column flex">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="advantages__column flex advantages__hack2">
                             <svg class="advantages__column__svg" width="78" height="80" viewBox="0 0 78 80" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_51_116)">
@@ -185,7 +184,11 @@
                 </h2>
                 <ul class="row list-reset teacher__list">
                     <li class="col-lg-3 col-md-6 col-sm-6 teacher__item">
-                        <img class="teacher__img" src="img/teacher1.png" alt="Vladimir Petrov">
+                        <picture>
+                            <source srcset="img/teacher1.png" media="(max-width: 767px)">
+                            <source srcset="img/petrov768.png" media="(max-width: 992px)">
+                            <img class="teacher__img" src="img/teacher1.png" alt="Vladimir Petrov">
+                        </picture>
                         <h3 class="teacher__name">
                             Владимир Петров
                         </h3>
@@ -195,7 +198,11 @@
                         </p>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-6 teacher__item">
-                        <img class="teacher__img" src="/img/teacher2.png" alt="Denis Sergeev">
+                        <picture>
+                            <source srcset="/img/teacher2.png" media="(max-width: 767px)">
+                            <source srcset="img/sergeev768.png" media="(max-width: 992px)">
+                            <img class="teacher__img" src="/img/teacher2.png" alt="Denis Sergeev">
+                        </picture>
                         <h3 class="teacher__name">
                             Денис Сергеев
                         </h3>
@@ -204,7 +211,11 @@
                         </p>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-6 teacher__item">
-                        <img class="teacher__img" src="/img/teacher3.png" alt="Mikhail Andreev">
+                        <picture>
+                            <source srcset="/img/teacher3.png" media="(max-width: 767px)">
+                            <source srcset="img/andreev768.png" media="(max-width: 992px)">
+                            <img class="teacher__img" src="/img/teacher3.png" alt="Mikhail Andreev">
+                        </picture>
                         <h3 class="teacher__name">
                             Михаил Андреев
                         </h3>
@@ -214,7 +225,11 @@
                         </p>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-6 teacher__item">
-                        <img class="teacher__img" src="/img/teacher4.png" alt="Konstantin Dmitriev">
+                        <picture>
+                            <source srcset="/img/teacher4.png" media="(max-width: 767px)">
+                            <source srcset="img/dmitriev768.png" media="(max-width: 992px)">
+                            <img class="teacher__img" src="/img/teacher4.png" alt="Konstantin Dmitriev">
+                        </picture>
                         <h3 class="teacher__name">
                             Константин Дмитриев
                         </h3>
@@ -233,7 +248,7 @@
                     Курсы
                 </h2>
                 <ul class="row list-reset">
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <li class="col-lg-6 col-md-6 col-sm-6 col-12 courses__col">
                         <div class="courses__img img1 flex">
                             <svg class="courses__img__time" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -250,18 +265,20 @@
                             <h3 class="courses__item__title">
                                 Cinema 4d&nbsp;для начинающих
                             </h3>
-                            <p class="courses__item__descr descr__1">
+                            <p class="courses__item__descr">
                                 Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит
                                 от&nbsp;системы массового участия. Следует отметить, что сложившаяся структура
                                 организации
                                 напрямую зависит от&nbsp;стандартных подходов.
                             </p>
-                            <button class="btn btn-reset courses__btn">
-                                Подробнее
-                            </button>
+                            <div class="courses__btn__div flex">
+                                <button class="btn btn-reset courses__btn">
+                                    Подробнее
+                                </button>
+                            </div>
                         </div>
                     </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <li class="col-lg-6 col-md-6 col-sm-6 col-12 courses__col">
                         <div class="courses__img img2 flex">
                             <svg class="courses__img__time" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -278,17 +295,19 @@
                             <h3 class="courses__item__title">
                                 Blender: продвинутый уровень
                             </h3>
-                            <p class="courses__item__descr descr__2">
+                            <p class="courses__item__descr">
                                 Но&nbsp;убеждённость некоторых оппонентов в&nbsp;значительной степени обусловливает
                                 важность
                                 форм воздействия. Внезапно, тщательные исследования конкурентов представлены.
                             </p>
-                            <button class="btn btn-reset courses__btn">
-                                Подробнее
-                            </button>
+                            <div class="courses__btn__div flex">
+                                <button class="btn btn-reset courses__btn">
+                                    Подробнее
+                                </button>
+                            </div>
                         </div>
                     </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <li class="col-lg-6 col-md-6 col-sm-6 col-12 courses__col">
                         <div class="courses__img img3 flex">
                             <svg class="courses__img__time" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -305,16 +324,18 @@
                             <h3 class="courses__item__title">
                                 Визуализация в&nbsp;3ds Max
                             </h3>
-                            <p class="courses__item__descr descr__3">
+                            <p class="courses__item__descr">
                                 Повседневная практика показывает, что сложившаяся структура организации обеспечивает
                                 актуальность кластеризации усилий.
                             </p>
-                            <button class="btn btn-reset courses__btn">
-                                Подробнее
-                            </button>
+                            <div class="courses__btn__div flex">
+                                <button class="btn btn-reset courses__btn">
+                                    Подробнее
+                                </button>
+                            </div>
                         </div>
                     </li>
-                    <li class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <li class="col-lg-6 col-md-6 col-sm-6 col-12 courses__col">
                         <div class="courses__img img4 flex">
                             <svg class="courses__img__time" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -331,13 +352,15 @@
                             <h3 class="courses__item__title">
                                 Скульптинг в&nbsp;ZBrush
                             </h3>
-                            <p class="courses__item__descr descr__4">
+                            <p class="courses__item__descr">
                                 Разнообразный и&nbsp;богатый опыт говорит нам, что граница обучения кадров требует
                                 определения и&nbsp;уточнения прогресса профессионального сообщества! В&nbsp;частности,
                                 постоянный количественный рост и&nbsp;сфера нашей активности. </p>
-                            <button class="btn btn-reset courses__btn">
-                                Подробнее
-                            </button>
+                            <div class="courses__btn__div flex">
+                                <button class="btn btn-reset courses__btn">
+                                    Подробнее
+                                </button>
+                            </div>
                         </div>
                     </li>
                 </ul>
