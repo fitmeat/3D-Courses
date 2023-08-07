@@ -178,18 +178,47 @@
         padding-left: 25px;
     }
 
+    .courses__col {
+        padding-top: 23px;
+    }
+
+    .courses__col:nth-child(2n + 1) {
+        padding-left: 33px;
+    }
+
+    .courses__col:nth-child(2n) {
+        padding-right: 33px;
+    }
+
+    .img1 {
+        background-image: url(/img/cinema576.png);
+    }
+    
+    .img2 {
+        background-image: url(/img/blender576.png);
+    }
+    
+    .img3 {
+        background-image: url(/img/3ds576.png);
+    }
+    
+    .img4 {
+        background-image: url(/img/zbrush576.png);
+    }
+
     .courses__btn {
         padding: 20.5px 48px;
     }
 
     .courses__item__descr {
-        width: 180px;
-        min-height: 280px;
+        width: 193px;
+        min-height: 297px;
     }
 
     .courses__item__title {
         width: 194px;
         height: 41px;
+        line-height: 130%;
     }
 }
 
@@ -301,6 +330,28 @@
         padding-bottom: 113px;
     }
 
+    .courses__item__title, 
+    .courses__item__descr {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img1 {
+        background-image: url(/img/cinema320.png);
+    }
+    
+    .img2 {
+        background-image: url(/img/blender320.png);
+    }
+    
+    .img3 {
+        background-image: url(/img/3ds320.png);
+    }
+    
+    .img4 {
+        background-image: url(/img/zbrush320.png);
+    }
+
     .courses__title {
         padding-left: 0;
         font-size: 20px;
@@ -312,6 +363,10 @@
 
     .courses__col:nth-child(2n) {
         padding-right: 15px;
+    }
+
+    .courses__btn {
+        padding: 20.5px 55.5px;
     }
 
     .footer__social__container {
